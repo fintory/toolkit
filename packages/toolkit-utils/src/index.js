@@ -1,2 +1,2 @@
 // @flow
-export { default as generateFontSize } from './dynamicFontSize'
+export { default as fontSize, generateFontSize } from './dynamicFontSize'
