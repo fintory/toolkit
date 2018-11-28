@@ -1,0 +1,10 @@
+node_modules
+*.log
+lib
+coverage
+build
+packages/*/npm-debug.log.*
+es
+dist
+\.jest
+package-lock.json

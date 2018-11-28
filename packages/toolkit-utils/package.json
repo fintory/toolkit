@@ -1,0 +1,17 @@
+{
+  "name": "@fintory/utils",
+  "description": "Utilities we are internally using at Fintory",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
+  "author": "Fintory <nick@fintory.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "styled-components": "^4.1.1"
+  }
+}
