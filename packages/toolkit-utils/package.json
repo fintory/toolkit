@@ -8,6 +8,7 @@
   "author": "Fintory <nick@fintory.com>",
   "license": "MIT",
   "publishConfig": {
+    "access": "public",
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {},
