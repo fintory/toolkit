@@ -34,6 +34,10 @@
     "react/prop-types": "off",
     "import/extensions": "off",
     "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["{internals,scripts}/**/*.js"] }
+    ],
     "flowtype/boolean-style": [2, "boolean"],
     "flowtype/define-flow-type": 1,
     "flowtype/generic-spacing": [2, "never"],
