@@ -1,0 +1,17 @@
+{
+  "name": "@fintory/decorators",
+  "description": "Decorators we are internally using at Fintory",
+  "version": "0.2.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
+  "author": "Fintory <nick@fintory.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "http://registry.npmjs.org/"
+  },
+  "peerDependencies": {
+    "react-sizes": "^1.0.4"
+  }
+}
