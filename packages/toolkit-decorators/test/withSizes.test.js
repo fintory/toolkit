@@ -1,5 +1,4 @@
 // @flow
-
 import React from 'react'
 import { shallow, mount } from 'enzyme'
 import withSizes from '../src/withSizes'
