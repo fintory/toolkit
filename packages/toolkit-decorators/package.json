@@ -12,7 +12,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "devDependencies": {
-    "react-sizes": "^1.0.4"
+    "react-sizes": "1.0.4"
   },
   "peerDependencies": {
     "react-sizes": "^1.0.4"
