@@ -4,7 +4,7 @@
   "scripts": {
     "build": "./internals/scripts/build.sh",
     "test": "cross-env BABEL_ENV=commonjs NODE_ENV=test jest --no-cache",
-    "publish": "git pull --rebase && check-installed-dependencies && npm run build && lerna publish --skip-temp-tag --conventional-commits --message 'chore: Publish' && git push"
+    "publish": "git pull --rebase && check-installed-dependencies && npm run build && lerna publish --skip-temp-tag --conventional-commits --message 'chore: Publish [skip-ci]' && git push"
   },
   "devDependencies": {
     "@babel/cli": "7.2.3",
