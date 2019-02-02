@@ -49,7 +49,9 @@
   "jest": {
     "verbose": true,
     "cacheDirectory": ".jest",
-    "setupTestFrameworkScriptFile": "<rootDir>internals/tests/setup.js",
+    "setupFilesAfterEnv": [
+      "<rootDir>internals/tests/setup.js"
+    ],
     "testMatch": [
       "**/test/**/*.js"
     ],
