@@ -14,11 +14,13 @@ else
     package=`basename $f`
 
     if [ -d "$f" ] && [ -d "$f/src" ] && [ -e "$f/package.json" ]; then
-      echo "$f will be compiled now."
+      echo "$(tput setaf 1)$(tput setab 0) $f $(tput sgr 0)"
       ./node_modules/rimraf/bin.js $f/es $f/lib
 
       ./node_modules/@babel/cli/bin/babel.js $f/src --root-mode upward --out-dir $f/es
       BABEL_ENV=commonjs ./node_modules/@babel/cli/bin/babel.js $f/src --root-mode upward --out-dir $f/lib
+
+      echo ""
     fi
   done
 fi
