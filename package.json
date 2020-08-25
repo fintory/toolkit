@@ -22,7 +22,7 @@
     "babel-eslint": "10.0.1",
     "babel-jest": "24.0.0",
     "babel-plugin-polished": "1.1.0",
-    "babel-plugin-styled-components": "1.9.1",
+    "babel-plugin-styled-components": "1.11.1",
     "check-installed-dependencies": "1.0.1",
     "cross-env": "5.2.0",
     "enzyme": "3.7.0",
