@@ -1,4 +1,4 @@
-import { css } from 'styled-components'
+import { css, FlattenSimpleInterpolation } from 'styled-components'
 
 /**
  * Those are the constants that are used by Inter to calculate a dynamic letter
@@ -56,7 +56,7 @@ export function generateFontSize(
 export default function fontSize(
   size: number,
   lineHeightMultiplier: number = baseLine
-): typeof css {
+): FlattenSimpleInterpolation {
   // eslint-disable-next-line no-restricted-properties
   const { lineHeight, letterSpacing } = generateFontSize(
     size,

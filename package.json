@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "./internals/scripts/build.sh",
+    "build": "lerna run build",
     "test": "cross-env BABEL_ENV=commonjs NODE_ENV=test jest --no-cache",
     "lint": "eslint ./packages",
     "publish": "git pull --rebase && check-installed-dependencies && npm run build && lerna publish --skip-temp-tag --conventional-commits --message 'chore: Publish [skip-ci]' && git push"
@@ -39,6 +39,7 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "jest": "24.0.0",
     "lerna": "3.5.0",
+    "microbundle": "^0.12.4",
     "prettier": "^1.18.2",
     "prettier-eslint": "8.8.2",
     "react": "16.6.3",
