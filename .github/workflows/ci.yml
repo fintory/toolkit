@@ -3,7 +3,7 @@ name: CI
 on: [push, pull_request]
 
 jobs:
-  setup:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -12,13 +12,14 @@ jobs:
           node-version: 12
       - run: yarn install
       - run: yarn lerna bootstrap
-  build:
-    needs: [setup]
-    runs-on: ubuntu-latest
-    steps:
       - run: yarn lint
   lint:
-    needs: [setup]
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1.4.3
+        with:
+          node-version: 12
+      - run: yarn install
+      - run: yarn lerna bootstrap
       - run: yarn test
