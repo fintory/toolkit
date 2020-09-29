@@ -1,10 +1,15 @@
+# Build folders
+build/
+es/
+lib/
+dist/
+
+# Package installation folders and NPM Stuff
 node_modules
-*.log
-lib
-coverage
-build
-packages/*/npm-debug.log.*
-es
-dist
-\.jest
 package-lock.json
+packages/*/npm-debug.log.*
+
+# Others
+*.log
+coverage
+\.jest

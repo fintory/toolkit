@@ -2,15 +2,16 @@
   "name": "@fintory/utils",
   "description": "Utilities we are internally using at Fintory",
   "version": "0.3.0",
-  "main": "lib/index.js",
-  "module": "es/index.js",
-  "jsnext:main": "es/index.js",
   "author": "Fintory <nick@fintory.com>",
   "license": "MIT",
   "publishConfig": {
     "access": "public",
     "registry": "http://registry.npmjs.org/"
   },
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "unpkg": "dist/index.umd.js",
   "devDependencies": {
     "styled-components": "4.1.1"
   },
